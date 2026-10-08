@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>PilaConsoleApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Una sola copia del código compartido (no se duplica en este proyecto) -->
+    <Compile Include="..\Shared\*.cs" Link="Shared\%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>
